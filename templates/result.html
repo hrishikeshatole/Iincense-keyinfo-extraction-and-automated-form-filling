@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YOLO Model Results</title>
+        <style>
+            body {
+                background-color: #e6f7ff; 
+                text-align: center; 
+                max-width: 1200px; 
+                margin: 0 auto;
+            }
+    
+            h1 {
+                color: #333; 
+            }
+    
+            #imagePreview {
+                max-width: 100%;
+                max-height: 400px;
+                margin-top: 20px; 
+            }
+    
+            #uploadedImage {
+                max-width: 100%; 
+                margin-top: 20px; 
+            }
+    
+            #yoloOutputs {
+                text-align: left; 
+                margin-top: 20px; 
+            }
+    
+            form {
+                margin-top: 20px; 
+            }
+        </style>
+    </head>
+    <body>
+    <h1>YOLO Model Results</h1>
+    
+    <!-- Display YOLO outputs -->
+    <div id="yoloOutputs">
+        {% for item in outputs %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    </div>
+
+    <!-- Display uploaded image in the top right corner -->
+    <div id="uploadedImage">
+        <img src="data:image/png;base64,{{ encoded_image }}" alt="Uploaded Image">
+    </div>
+
+    <!-- Auto-fill form with data from JSON file -->
+<h2>Auto-fill Form</h2>
+<form>
+    <!-- <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" value=""><br> -->
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" value=""><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" value=""><br>
+
+    <label for="docnumber">Document Number:</label>
+    <input type="text" id="docnumber" name="docnumber" value=""><br>
+
+    <label for="dob">DOB:</label>
+    <input type="text" id="dob" name="dob" value=""><br>
+
+    <button type="button" onclick="autoFillForm()">Auto-Fill Form</button>
+    <input type="submit" value="Submit">
+
+    <script>
+        var jsonData = {{ outputs_json | safe }};
+        
+        function autoFillForm() {
+            // document.getElementById('firstname').value = jsonData[0]["First Name"] || "";
+            document.getElementById('lastname').value = jsonData[2]["Last Name"] || "";
+            document.getElementById('address').value = jsonData[0]["Address"] || "";
+            document.getElementById('docnumber').value = jsonData[1]["Lincens Number"] || "";
+            document.getElementById('dob').value = jsonData[3]["DOB"] || "";
+        }
+    </script>
+</form>
+</body>
+</html>
