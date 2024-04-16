@@ -1,9 +1,12 @@
-Heads Up!
+## Heads Up!
+
 Hey there, thanks for visitng this repo! Before you dive into this project, just a quick heads up: it's more of a fun experiment than a polished, production-ready app. Think of it as a sneak peek into what's possible with OCR, Flask, and Yolo!
 
-What does that mean for you? Well, it means the accuracy might not be 100%.
+## What does that mean for you? 
+Well, it means the accuracy might not be 100%.
 
-To answer the reason i have train yolo's YOLOv8n.pt for training and only for 10 epochs
+## To answer it: 
+The reason is I have train yolo's YOLOv8n.pt for training and only for 10 epochs. 
 
 ## Flask OCR Application
 
