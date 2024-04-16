@@ -1,3 +1,10 @@
+Heads Up!
+Hey there, thanks for visitng this repo! Before you dive into this project, just a quick heads up: it's more of a fun experiment than a polished, production-ready app. Think of it as a sneak peek into what's possible with OCR, Flask, and Yolo!
+
+What does that mean for you? Well, it means the accuracy might not be 100%.
+
+To answer the reason i have train yolo's YOLOv8n.pt for training and only for 10 epochs
+
 ## Flask OCR Application
 
 This is a Flask application for performing Optical Character Recognition (OCR) on uploaded images. The application utilizes the YOLO (You Only Look Once) object detection model to detect text regions in the image, and then performs OCR using Tesseract OCR.
