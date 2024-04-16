@@ -4,7 +4,7 @@ Hey there, thanks for visiting this repo! Before you dive into this project, jus
 
 **What does that mean for you?** Well, it means the accuracy might not be 100%.
 
-**To answer it** The reason is I have used yolo's YOLOv8n.pt for training and only for 10 epochs. 
+**To answer it** The reason is I have used yolo's YOLOv8n.pt for training.
 
 **Note:** Remember to update the file paths in the code to match your system after downloading, so everything runs smoothly on your end!
 
