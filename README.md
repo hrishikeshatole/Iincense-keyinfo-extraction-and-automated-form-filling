@@ -8,6 +8,8 @@ Well, it means the accuracy might not be 100%.
 ## To answer it: 
 The reason is I have used yolo's YOLOv8n.pt for training and only for 10 epochs. 
 
+**Note:** Remember to update the file paths in the code to match your system after downloading, so everything runs smoothly on your end!
+
 ## Flask OCR Application
 
 This is a Flask application for performing Optical Character Recognition (OCR) on uploaded images. The application utilizes the YOLO (You Only Look Once) object detection model to detect text regions in the image, and then performs OCR using Tesseract OCR.
