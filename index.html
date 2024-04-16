@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>YOLO Model Index</title>
+            <style>
+                body {
+                    background-color: #e6f7ff; 
+                    text-align: center; 
+                    max-width: 1200px; 
+                    margin: 0 auto; 
+                }
+        
+                h1 {
+                    color: #333;
+                }
+        
+                #imagePreview {
+                    max-width: 100%;
+                    max-height: 400px;
+                    margin-top: 20px; 
+                }
+        
+                #uploadedImage {
+                    max-width: 100%; 
+                    margin-top: 20px; 
+                }
+        
+                #yoloOutputs {
+                    text-align: left; 
+                    margin-top: 20px;
+                }
+        
+                form {
+                    margin-top: 20px;
+                }
+            </style>
+        </head>
+<body>
+    <h1>YOLO Model Deployment</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" onchange="previewImage(event)">
+        <input type="submit" value="Upload and Process">
+        <div id="imagePreview"></div>
+    </form>
+
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById('imagePreview');
+            
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML = '<img src="' + e.target.result + '" alt="Uploaded Image">';
+                };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>
