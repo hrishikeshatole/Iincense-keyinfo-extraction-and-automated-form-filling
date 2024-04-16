@@ -14,26 +14,25 @@ This is a Flask application for performing Optical Character Recognition (OCR) o
 
 ## Features
 
-- Upload an image containing text.
+- Upload an image from the repo.
 - Detect text regions using YOLO.
 - Perform OCR on detected text regions.
 - Extract information such as address, class, date of birth, expiration date, first name, issue date, last name, license number, and sex from the text.
 - Display the original image with annotated text regions and extracted information.
 - Save the extracted information in a JSON file.
+- Using the same JSON file fill the form using java script.
 
 ## Installation
 
 1. Clone the repository or download it.
-
 2. Install the required dependencies
-
-3. Download the YOLO pre-trained model weights (`.pt` file) and place it in the project directory.
+3. Download the YOLO pre-trained model weights (`best.pt` file) and place it in the project directory.
 
 ## Usage
 
 1. Start the Flask server: "python app.py"  
 2. Open a web browser and navigate to `http://localhost:5000`.
-3. Upload an image using the provided form.
+3. Upload image using the provided form.
 4. View the annotated image with extracted information.
 
 ## File Structure
