@@ -1,6 +1,6 @@
 ## Heads Up!
 
-Hey there, thanks for visitng this repo! Before you dive into this project, just a quick heads up: it's more of a fun experiment than a polished, production-ready app. Think of it as a sneak peek into what's possible with OCR, Flask, and Yolo!
+Hey there, thanks for visiting this repo! Before you dive into this project, just a quick heads up: it's more of a fun experiment than a polished, production-ready app. Think of it as a sneak peek into what's possible with OCR, Flask, and Yolo!
 
 ## What does that mean for you? 
 Well, it means the accuracy might not be 100%.
